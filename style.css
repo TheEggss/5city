@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+    font-size: 48px;
+    color: white;
+    background-color: #383737;
+}
+
+header {
+    text-align: center;
+    width: 100vw;
+    height: 100px;
+    margin-top: 70px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+.main {
+    background-color: #2C2B2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1130px;
+    height: 620px;
+    margin-left: 100px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.aboutme, .experience, .skills, .latter {
+    border: 5px solid #5C11BC;
+    width: 530px;
+    height: 280px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s;
+}
+
+.aboutme:hover, .experience:hover, .skills:hover, .latter:hover { 
+    background: #6a27c2;
+}
+
+.experience, .latter {
+    margin-left: 10px;
+}
+
+img {
+    width: 540px;
+    height: 620px;
+    border-radius: 20px;
+}
+
+footer {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.one {
+    text-align: center;
+    display: none;
+    font-size: 0;
+}
+
+/*.oneText {
+
+}*/
+
+.main i{
+    display: none;
+}
