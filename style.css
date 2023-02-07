@@ -76,10 +76,11 @@ footer {
     font-size: 0;
 }
 
-/*.oneText {
-
-}*/
+.oneText {
+    font-size: 0;
+}
 
 .main i{
     display: none;
+    font-size: 0;
 }

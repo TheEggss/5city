@@ -69,8 +69,8 @@ function arrowHide() {
 
 function aboutme() {
     hide();
-    one.style.transition = "font-size 0.5s";
-    oneText.style.transition = "font-size 0.5s";
+    //one.style.transition = "font-size 0.5s";
+    //oneText.style.transition = "font-size 0.5s";
     setTimeout(()=>{
         arrowShow();
         //one.style.transition = "width 0.5s, height 0.5s, padding 0.5s, font-size 0.5s";
