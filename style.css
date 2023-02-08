@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Jura', sans-serif;
-    font-size: 48px;
+    font-size: 60px;
     color: white;
     background-color: #383737;
 }
@@ -36,8 +36,8 @@ section {
     text-align: left;
 }
 
-.aboutme, .experience, .skills, .latter {
-    border: 5px solid #5C11BC;
+.content {
+    border: 5px solid #6a27c2;
     width: 530px;
     height: 280px;
     text-align: center;
@@ -46,13 +46,15 @@ section {
     justify-content: center;
     align-items: center;
     transition: background 1s;
+    cursor: pointer;
+    font-size: 48px;
 }
 
-.aboutme:hover, .experience:hover, .skills:hover, .latter:hover { 
+.content:hover { 
     background: #6a27c2;
 }
 
-.experience, .latter {
+.marginLeft {
     margin-left: 10px;
 }
 
@@ -70,17 +72,128 @@ footer {
     margin-top: 50px;
 }
 
-.one {
-    text-align: center;
-    font-size: 0;
-    transition: opacity 0.5s;
-    opacity: 0;
+.hideContent {
+    background-color: #6a27c2;
+    animation: hideContent 0.5s forwards;
 }
 
-/*.oneText {
+.showContent {
+    animation: showContent 0.5s forwards;
+}
 
-}*/
+.showContentOne {
+    animation: showContentOne 0.5s forwards;
+    padding: 0 20px;
+    text-align: center;
+    height: 532px;
+    width: 1090px;
+    color: #6a27c2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-.main i{
-    display: none;
+.showContentOne p {
+    font-size: 36px;
+    color: white;
+}
+
+.arrow{
+    opacity: 0;
+    font-size: 0;
+    margin: 0;
+}
+
+.showArrow {
+    animation: showArrow 0.5s forwards;
+    margin: 20px 30px;
+    transition: color 0.5s;
+    cursor: pointer;
+}
+
+.showArrow:hover {
+    color: #6a27c2;
+}
+
+.hideArrow {
+    animation: hideArrow 0.5s forwards;
+}
+
+.textOne {
+    text-align: center;
+    font-size: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.textTwo {
+    text-align: center;
+    font-size: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.textThree {
+    text-align: center;
+    font-size: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.textFour {
+    text-align: center;
+    font-size: 0;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.hideText {
+    padding: 0 20px;
+    text-align: center;
+    height: 532px;
+    width: 1090px;
+    color: #6a27c2;
+    animation: hideText 0.5s forwards;
+}
+
+.hideText p {
+    font-size: 36px;
+    color: white;
+}
+
+@keyframes showArrow {
+    from {opacity: 0; font-size: 0;}
+    to {opacity: 1; font-size: 48px}
+}
+
+@keyframes hideArrow {
+    from {opacity: 1; font-size: 48px;}
+    to {opacity: 0; font-size: 0;}
+}
+
+@keyframes hideText {
+    from {opacity: 1; font-size: 48px;}
+    to {opacity: 0; font-size: 0;}
+}
+
+@keyframes showContentOne {
+    from {opacity: 0;  font-size: 0;}
+    to {opacity: 1;  font-size: 48px; }
+}
+
+@keyframes hideContent {
+    from {opacity: 1; height: 280px; font-size: 48px;}
+    99% {border: 5px solid #6a27c2;}
+    to {opacity: 0; height: 0; font-size: 0; border: 0}
+}
+
+@keyframes showContent {
+    from {opacity: 0; height: 0; font-size: 0;}
+    1% {border: 5px solid #6a27c2;}
+    to {opacity: 1; height: 280px; font-size: 48px;}
 }
