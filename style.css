@@ -72,14 +72,22 @@ footer {
 
 .one {
     text-align: center;
-    display: none;
+    font-size: 0;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.oneText {
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.main i{
+    transition: color 0.5s, opacity 0.5s;
+    opacity: 0;
     font-size: 0;
 }
 
-/*.oneText {
-
-}*/
-
-.main i{
-    display: none;
+.main i:hover {
+    color: #5C11BC;
 }
