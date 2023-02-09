@@ -215,6 +215,7 @@ footer {
         width: 98%;
         border-radius: 0;
         padding: 1%;
+        height: auto;
     }
 
     .marginLeft {
@@ -223,24 +224,7 @@ footer {
 
 }
 
-@media (max-width: 900px) {
-
-    .main {
-        height: 900px;
-    }
-
-}
-
-@media (max-width: 540px) {
-
-    img {
-        width: 400px;
-        height: 500px
-    }
-
-    .main {
-        height: 1100px;
-    }
+@media (max-width: 800px) {
 
     .hideText p {
         font-size: 24px;
@@ -258,6 +242,15 @@ footer {
     @keyframes showContentOne {
         from {opacity: 0;  font-size: 0;}
         to {opacity: 1;  font-size: 36px; }
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    img {
+        width: 400px;
+        height: 500px
     }
     
 }
