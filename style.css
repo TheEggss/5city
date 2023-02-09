@@ -198,6 +198,7 @@ footer {
 }
 
 @media (max-width: 1850px) {
+
     section {
         flex-direction: column;
     }
@@ -205,24 +206,58 @@ footer {
     .main {
         margin-top: 50px;
     }
+
 }
 
 @media (max-width: 1130px) {
+
     .main {
         width: 98%;
         border-radius: 0;
-        height: auto;
         padding: 1%;
     }
 
     .marginLeft {
         margin-left: 0;
     }
+
+}
+
+@media (max-width: 900px) {
+
+    .main {
+        height: 900px;
+    }
+
 }
 
 @media (max-width: 540px) {
+
     img {
         width: 400px;
         height: 500px
     }
+
+    .main {
+        height: 1100px;
+    }
+
+    .hideText p {
+        font-size: 24px;
+    }
+
+    .showContentOne p {
+        font-size: 24px;
+    }
+
+    @keyframes hideText {
+        from {opacity: 1; font-size: 36px;}
+        to {opacity: 0; font-size: 0;}
+    }
+    
+    @keyframes showContentOne {
+        from {opacity: 0;  font-size: 0;}
+        to {opacity: 1;  font-size: 36px; }
+    }
+    
 }
